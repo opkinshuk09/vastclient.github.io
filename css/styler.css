@@ -1,0 +1,1986 @@
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .8px;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: #fff;
+    color: #6f6f6f
+}
+
+svg {
+    fill: currentcolor;
+    width: 15px;
+    height: 15px
+}
+
+img.svg {
+    width: 15px;
+    height: 15px
+}
+
+::-webkit-input-placeholder {
+    color: #6f6f6f
+}
+
+:-moz-placeholder {
+    color: #6f6f6f;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #6f6f6f;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #6f6f6f
+}
+
+::-ms-input-placeholder {
+    color: #6f6f6f
+}
+
+::placeholder {
+    color: #6f6f6f
+}
+
+.logo {
+    color: #fff
+}
+
+.logo b {
+    color: #e50914
+}
+
+.nombo_tm_sticky_section {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    overflow: visible;
+    top: 150px
+}
+
+.nombo_tm_sticky_section:after {
+    clear: both;
+    display: table;
+    content: ''
+}
+
+.nombo_tm_all_wrap {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_all_wrap,
+.nombo_tm_all_wrap * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.nombo_tm_all_wrap .wrapper_inner {
+    width: 100%;
+    min-height: 100vh;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_section {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_preloader {
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999999;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s
+}
+
+.nombo_tm_preloader .spinner_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 33333
+}
+
+.nombo_tm_preloader.loaded {
+    opacity: 0;
+    visibility: hidden
+}
+
+.nombo_tm_preloader:after,
+.nombo_tm_preloader:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+    -webkit-transition: .7s all ease;
+    -o-transition: .7s all ease;
+    transition: .7s all ease
+}
+
+.nombo_tm_preloader:before {
+    top: 0;
+    left: 0
+}
+
+.nombo_tm_preloader:after {
+    bottom: 0;
+    left: 0
+}
+
+.nombo_tm_preloader.loaded:after,
+.nombo_tm_preloader.loaded:before {
+    height: 0%
+}
+
+.nombo_tm_leftpart {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15)
+}
+
+.nombo_tm_leftpart .leftpart_inner {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    float: left;
+    padding: 60px
+}
+
+.nombo_tm_leftpart .leftpart_inner .logo {
+    float: left
+}
+
+.nombo_tm_leftpart .leftpart_inner .logo img {
+    max-width: 200px;
+    max-height: 200px
+}
+
+.nombo_tm_leftpart .menu {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_leftpart .menu ul {
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.nombo_tm_leftpart .menu ul li {
+    margin: 0;
+    position: relative
+}
+
+.nombo_tm_leftpart .menu ul li:last-child:before {
+    display: none
+}
+
+.nombo_tm_leftpart .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 9px 0;
+    display: inline-block;
+    font-family: Montserrat;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_leftpart .menu ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #2d5fff;
+    z-index: -1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_leftpart .menu ul li a:hover:after {
+    width: 100%
+}
+
+.nombo_tm_leftpart .menu ul li a:hover {
+    color: #2d5fff
+}
+
+.nombo_tm_leftpart .copyright {
+    position: absolute;
+    bottom: 60px;
+    left: 60px
+}
+
+.nombo_tm_leftpart .copyright p {
+    color: #000
+}
+
+.nombo_tm_leftpart .copyright p a {
+    text-decoration: none;
+    color: #2d5fff;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_leftpart .copyright p a:hover {
+    border-bottom-color: #2d5fff
+}
+
+.nombo_tm_rightpart {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-left: 400px
+}
+
+.nombo_tm_rightpart .hero {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    margin-bottom: 150px;
+    overflow: hidden
+}
+
+.nombo_tm_rightpart .hero .bg_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.nombo_tm_rightpart .hero .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+.nombo_tm_rightpart .hero .container {
+    height: 100%
+}
+
+.nombo_tm_rightpart .hero .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2
+}
+
+.nombo_tm_rightpart .hero .content .name {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.nombo_tm_rightpart .hero .content .job {
+    font-size: 25px;
+    margin-bottom: 30px
+}
+
+.nombo_tm_rightpart .hero .social ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.nombo_tm_rightpart .hero .social ul li {
+    margin: 0 5px 0 0;
+    display: inline-block;
+    text-align: center
+}
+
+.nombo_tm_rightpart .hero .social ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    border-radius: 100%;
+    background-color: #2d5fff;
+    border: 2px solid #2d5fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_rightpart .hero .social ul li a:hover {
+    background-color: transparent;
+    color: #000
+}
+
+.nombo_tm_arrow_wrap {
+    position: absolute;
+    left: auto;
+    bottom: 5%;
+    z-index: 55
+}
+
+.nombo_tm_arrow_wrap.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+.nombo_tm_arrow_wrap a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px
+}
+
+.nombo_tm_about {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 180px
+}
+
+.nombo_tm_about .about_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex;
+    align-items: center
+}
+
+.nombo_tm_about .about_inner .left {
+    width: 50%;
+    padding-right: 60px
+}
+
+.nombo_tm_about .about_inner .left .image {
+    position: relative;
+    float: left
+}
+
+.nombo_tm_about .about_inner .left .image:before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    bottom: -30px;
+    left: 30px;
+    right: -30px;
+    background-color: #2d5fff
+}
+
+.nombo_tm_about .about_inner .left .image .main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.nombo_tm_about .right {
+    width: 50%;
+    padding-left: 50px
+}
+
+.mamer_title_holder {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 50px
+}
+
+.mamer_title_holder h3 {
+    font-weight: 700;
+    position: relative
+}
+
+.mamer_title_holder h3:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #2d5fff;
+    left: 0;
+    bottom: -10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.mamer_title_holder.load h3:before {
+    width: 80px
+}
+
+.nombo_tm_about .right .text {
+    width: 100%;
+    float: left;
+    margin-bottom: 12px
+}
+
+.nombo_tm_about .right .text p {
+    margin-bottom: 20px
+}
+
+.nombo_tm_button {
+    width: 100%;
+    float: left
+}
+
+.nombo_tm_button a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: Montserrat;
+    border: 2px solid #2d5fff;
+    padding: 8px 40px 6px 40px;
+    background-color: #2d5fff;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_button a:hover {
+    background-color: transparent;
+    color: #000
+}
+
+.nombo_tm_service {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #f9f9f9;
+    padding: 140px 0 100px 0
+}
+
+.nombo_tm_service .service_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex
+}
+
+.mamer_univ_title {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-bottom: 41px
+}
+
+.mamer_univ_title .text {
+    padding-bottom: 29px
+}
+
+.nombo_tm_service .service_inner .service_left {
+    width: 35%;
+    padding-right: 50px
+}
+
+.nombo_tm_service .service_inner .service_right {
+    width: 65%;
+    padding-left: 50px
+}
+
+.nombo_tm_service .service_inner .right {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_service .service_inner .right ul {
+    margin: 0 0 0 -50px;
+    list-style-type: none
+}
+
+.nombo_tm_service .service_inner .right ul li {
+    margin: 0 0 50px 0;
+    float: left;
+    width: 50%;
+    padding-left: 50px
+}
+
+.nombo_tm_service .service_inner .right ul li .list_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    padding: 50px 40px 40px 50px;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_service .service_inner .right ul li .svg {
+    width: 40px;
+    height: 40px;
+    color: #2d5fff;
+    margin-bottom: 21px
+}
+
+.nombo_tm_service .service_inner .right ul li .title {
+    font-size: 20px;
+    margin-bottom: 24px
+}
+
+.nombo_tm_service .service_inner .right ul li.active .svg {
+    color: #fff
+}
+
+.nombo_tm_service .service_inner .right ul li.active .title {
+    color: #fff
+}
+
+.nombo_tm_service .service_inner .right ul li.active .text {
+    color: #eee
+}
+
+.nombo_tm_service .service_inner .right ul li.active .list_inner {
+    background-color: #2d5fff
+}
+
+.nombo_tm_service .service_inner .right ul li .list_inner:hover {
+    background-color: #2d5fff
+}
+
+.nombo_tm_service .service_inner .right ul li .list_inner:hover .svg {
+    color: #fff
+}
+
+.nombo_tm_service .service_inner .right ul li .list_inner:hover .title {
+    color: #fff
+}
+
+.nombo_tm_service .service_inner .right ul li .list_inner:hover .text {
+    color: #eee
+}
+
+.nombo_tm_video {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #2d5fff;
+    padding: 90px 0;
+    margin-bottom: 150px
+}
+
+.nombo_tm_video .inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nombo_tm_video .inner .left h3 {
+    color: #fff;
+    margin-bottom: 5px
+}
+
+.nombo_tm_video .inner .left p {
+    color: #ccc
+}
+
+.watch {
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    padding-left: 55px
+}
+
+.watch .play {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%
+}
+
+.watch .play:before {
+    position: absolute;
+    content: "";
+    border: 7px solid transparent;
+    border-left-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px
+}
+
+.watch .play:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 44px;
+    height: 44px;
+    background-color: inherit;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+    border: 3px solid #fff;
+    border-radius: 100%
+}
+
+.watch:hover .play:after {
+    opacity: 0;
+    -webkit-animation: cs_fn_pulse 2s cubic-bezier(.3, 1, .3, 1) infinite;
+    animation: cs_fn_pulse 2s cubic-bezier(.3, 1, .3, 1) infinite;
+    z-index: 1
+}
+
+@-webkit-keyframes cs_fn_pulse {
+    from {
+        opacity: 1;
+        transform: scale(1, 1)
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.8, 1.8)
+    }
+}
+
+@keyframes cs_fn_pulse {
+    from {
+        opacity: 1;
+        transform: scale(1, 1)
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.8, 1.8)
+    }
+}
+
+.watch .text {
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 6px;
+    font-weight: 500
+}
+
+.watch .full_link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2
+}
+
+.nombo_tm_portfolio {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 100px
+}
+
+.nombo_tm_portfolio .inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex
+}
+
+.nombo_tm_portfolio .portfolio_left {
+    width: 65%;
+    padding-right: 50px
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul {
+    margin: 0 0 0 -50px;
+    list-style-type: none
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li {
+    margin: 0 0 50px 0;
+    float: left;
+    width: 50%;
+    padding-left: 50px
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .list_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    overflow: hidden
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .image {
+    position: relative;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .list_inner:hover .image {
+    -webkit-filter: blur(3px);
+    filter: blur(3px)
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .image .main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .detail {
+    width: 100%;
+    float: left;
+    background-color: #2d5fff;
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .detail h3 {
+    font-size: 20px;
+    color: #fff
+}
+
+.nombo_tm_portfolio .portfolio_left .portfolio_list ul li .detail span {
+    color: #eee
+}
+
+.nombo_tm_portfolio .full_link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.nombo_tm_portfolio .portfolio_right {
+    width: 35%;
+    padding-left: 50px
+}
+
+.nombo_tm_skills {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #f9f9f9;
+    padding: 143px 0 151px 0;
+    margin-bottom: 143px
+}
+
+.xender_tm_freelancer_title.another h3 {
+    color: #fff
+}
+
+.xender_tm_freelancer_title.another p {
+    color: #bbb
+}
+
+.nombo_tm_skills .skills_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex
+}
+
+.nombo_tm_skills .skills_inner .skilla_title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 40px
+}
+
+.nombo_tm_skills .skills_inner .progress_inner {
+    margin-bottom: 41px
+}
+
+.nombo_tm_skills .skills_inner .progress_inner:last-child {
+    margin-bottom: 0
+}
+
+.nombo_tm_skills .skills_inner .left {
+    width: 50%;
+    padding-right: 50px
+}
+
+.nombo_tm_skills .skills_inner .right {
+    width: 50%;
+    padding-left: 50px
+}
+
+.mamer_progress {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-top: 50px
+}
+
+.nombo_tm_skills .progress_inner {
+    width: 100%;
+    margin-bottom: 11px
+}
+
+.nombo_tm_skills .progress_inner>span {
+    margin: 0 0 7px 0;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #000
+}
+
+.nombo_tm_skills .progress_inner span.number {
+    float: right
+}
+
+.nombo_tm_skills .progress_inner .background {
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    height: 8px
+}
+
+.nombo_tm_skills .progress_inner .background .bar_in {
+    height: 100%;
+    background: #333;
+    width: 0;
+    overflow: hidden
+}
+
+.nombo_tm_skills .progress_inner .background .bar {
+    width: 0;
+    height: 100%
+}
+
+.nombo_tm_skills .progress_inner .background .bar.open {
+    -webkit-animation: wow 3s cubic-bezier(.165, .84, .44, 1);
+    -moz-animation: wow 3s cubic-bezier(.165, .84, .44, 1);
+    animation: wow 3s cubic-bezier(.165, .84, .44, 1);
+    width: 100%
+}
+
+@-webkit-keyframes wow {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@-moz-keyframes wow {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes wow {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+.nombo_tm_news {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 100px
+}
+
+.nombo_tm_news .inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex
+}
+
+.nombo_tm_news .news_left {
+    width: 35%;
+    padding-right: 50px
+}
+
+.nombo_tm_news .news_right {
+    width: 65%;
+    padding-left: 50px
+}
+
+.nombo_tm_news .news_right .news_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_news .news_right .news_list ul {
+    margin: 0 0 0 -50px;
+    list-style-type: none
+}
+
+.nombo_tm_news .news_right .news_list ul li {
+    margin: 0 0 50px 0;
+    float: left;
+    width: 50%;
+    padding-left: 50px
+}
+
+.nombo_tm_news .news_right .news_list ul li .list_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative
+}
+
+.nombo_tm_news .news_right .news_list ul li .image {
+    position: relative;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.nombo_tm_news .news_right .news_list ul li .image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.nombo_tm_news .news_right .news_list ul li .image .main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.nombo_tm_news .news_right .news_list ul li .full_link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.nombo_tm_news .news_right .news_list .detail {
+    width: 100%;
+    float: left;
+    background-color: #2d5fff;
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.nombo_tm_news .news_right .news_list .detail .date {
+    display: none
+}
+
+.nombo_tm_news .news_right .news_list .detail .date a {
+    text-decoration: none;
+    color: #2d5fff
+}
+
+.nombo_tm_news .news_right .news_list .detail .title {
+    font-size: 20px
+}
+
+.nombo_tm_news .news_right .news_list .detail .title a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_partners {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #2d5fff;
+    padding: 65px 0;
+    margin-bottom: 140px
+}
+
+.nombo_tm_partners .partner_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_partners .partner_inner ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.nombo_tm_partners .partner_inner ul li {
+    margin: 0;
+    text-align: center
+}
+
+.nombo_tm_contact {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 70px
+}
+
+.nombo_tm_contact .contact_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex
+}
+
+.nombo_tm_contact .contact_left {
+    width: 35%;
+    padding-right: 50px
+}
+
+.nombo_tm_contact .about_short_contact_wrap {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 19px
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul li {
+    margin: 0 0 10px 0;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-left: 30px
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul li:nth-of-type(2n) {
+    clear: right
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul li label {
+    font-weight: 500;
+    color: #000;
+    min-width: 85px;
+    display: inline-block
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul li a {
+    text-decoration: none;
+    color: #2d5fff;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul li a:hover {
+    border-bottom-color: #2d5fff
+}
+
+.nombo_tm_contact .about_short_contact_wrap ul li .svg {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 17px;
+    height: 17px;
+    color: #2d5fff
+}
+
+.nombo_tm_contact .right {
+    width: 65%;
+    padding-left: 50px
+}
+
+.nombo_tm_contact .right .input_wrap {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_contact .right .input_wrap ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.nombo_tm_contact .right .input_wrap ul li {
+    margin: 0 0 25px 0;
+    width: 100%;
+    float: left;
+    border: 1px solid #6f6f6f
+}
+
+.nombo_tm_contact .right .input_wrap ul li input {
+    width: 100%;
+    background-color: transparent;
+    border: none
+}
+
+.nombo_tm_contact .right .input_wrap ul li input:focus {
+    outline: 0
+}
+
+.nombo_tm_contact .right .input_wrap ul li textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: 44px !important;
+    resize: none
+}
+
+.nombo_tm_contact .right .input_wrap ul li textarea:focus {
+    outline: 0
+}
+
+.nombo_tm_contact .empty_notice {
+    color: #f52225;
+    margin-bottom: 7px;
+    display: none;
+    text-align: left;
+    font-weight: 500
+}
+
+.nombo_tm_contact .contact_error {
+    color: #f52225;
+    text-align: left;
+    font-weight: 500
+}
+
+.nombo_tm_contact .returnmessage {
+    color: #3a00ff;
+    margin-bottom: 7px;
+    text-align: left;
+    font-weight: 500
+}
+
+.nombo_tm_footer {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #2d5fff;
+    padding: 61px 0
+}
+
+.nombo_tm_footer .inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nombo_tm_footer .inner .logo img {
+    max-width: 100px;
+    max-height: 100px
+}
+
+.nombo_tm_footer .inner .social ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.nombo_tm_footer .inner .social ul li {
+    margin: 0 15px 0 0;
+    display: inline-block;
+    text-align: center
+}
+
+.nombo_tm_footer .inner .social ul li a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.glitch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../img/slider/3.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    z-index: -1 !important;
+    opacity: 1;
+    transform: scale(1)
+}
+
+.glitch:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.nombo_tm_rightpart .hero.ripple {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/slider/3.jpg);
+    position: relative;
+    z-index: 4
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2
+}
+
+.nombo_tm_rightpart .hero .content.particle {
+    z-index: 3
+}
+
+.nombo_tm_rightpart .hero .container.particle {
+    position: static
+}
+
+.nombo_tm_rightpart .hero.video .overlay {
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.nombo_tm_rightpart .hero.video .content .name {
+    color: #fff
+}
+
+.nombo_tm_rightpart .hero.video .content .job {
+    color: #eee
+}
+
+.nombo_tm_rightpart .hero.video .social ul li a:hover {
+    color: #fff
+}
+
+.nombo_tm_arrow_wrap.video a {
+    color: #fff
+}
+
+body.rtl {
+    direction: rtl
+}
+
+body.rtl .nombo_tm_leftpart .menu ul li {
+    float: right
+}
+
+body.rtl .nombo_tm_leftpart .leftpart_inner .logo {
+    float: right
+}
+
+body.rtl .nombo_tm_leftpart .copyright {
+    left: auto;
+    right: 60px
+}
+
+body.rtl .nombo_tm_rightpart .hero .social ul li {
+    float: right
+}
+
+body.rtl .nombo_tm_about .about_inner .left {
+    padding-right: 0;
+    padding-left: 60px
+}
+
+body.rtl .nombo_tm_about .right {
+    padding-left: auto;
+    padding-right: 50px
+}
+
+body.rtl .nombo_tm_about .about_inner .left .image:before {
+    bottom: -30px;
+    left: -30px;
+    right: 30px
+}
+
+body.rtl .mamer_title_holder h3:before {
+    left: auto;
+    right: 0
+}
+
+body.rtl .nombo_tm_service .service_inner .service_right {
+    padding-right: 50px;
+    padding-left: 0
+}
+
+body.rtl .nombo_tm_service .service_inner .service_left {
+    padding-left: 50px;
+    padding-right: 0
+}
+
+body.rtl .nombo_tm_service .service_inner .right ul li {
+    float: right
+}
+
+body.rtl .nombo_tm_portfolio .portfolio_left {
+    padding-right: 0;
+    padding-left: 50px
+}
+
+body.rtl .nombo_tm_portfolio .portfolio_right {
+    padding-left: 0;
+    padding-right: 50px
+}
+
+body.rtl .nombo_tm_portfolio .portfolio_left .portfolio_list ul li {
+    float: right
+}
+
+body.rtl .nombo_tm_skills .skills_inner .right {
+    padding-left: 0;
+    padding-right: 50px
+}
+
+body.rtl .nombo_tm_skills .skills_inner .left {
+    padding-left: 50px;
+    padding-right: 0
+}
+
+body.rtl .nombo_tm_news .news_right {
+    padding-left: 0;
+    padding-right: 50px
+}
+
+body.rtl .nombo_tm_news .news_left {
+    padding-left: 50px;
+    padding-right: 0
+}
+
+body.rtl .nombo_tm_news .news_right .news_list ul li {
+    float: right
+}
+
+body.rtl .nombo_tm_contact .contact_left {
+    padding-left: 50px;
+    padding-right: 0
+}
+
+body.rtl .nombo_tm_contact .right {
+    padding-left: 0;
+    padding-right: 50px
+}
+
+body.rtl .nombo_tm_contact .about_short_contact_wrap ul li {
+    padding-left: 0;
+    padding-right: 30px;
+    float: right
+}
+
+body.rtl .nombo_tm_contact .about_short_contact_wrap ul li .svg {
+    left: auto;
+    right: 0
+}
+
+.nombo_tm_intro_hero {
+    width: 100%;
+    height: 60vh;
+    background-color: #191919;
+    position: relative;
+    margin-bottom: 50px
+}
+
+.nombo_tm_intro_hero .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.nombo_tm_intro_hero .content span {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 0;
+    letter-spacing: 2px
+}
+
+.nombo_tm_intro_hero .content a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    font-family: Montserrat;
+    border: 2px solid #fff;
+    padding: 8px 40px 6px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_intro_hero .content a:hover {
+    background-color: transparent;
+    color: #fff
+}
+
+.nombo_tm_intro_mainpart {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 100px
+}
+
+.nombo_tm_intro_mainpart .mainpart_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_intro_mainpart .main_title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 90px
+}
+
+.nombo_tm_intro_mainpart .main_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.nombo_tm_intro_mainpart .main_list ul {
+    margin: 0 0 0 -50px;
+    list-style-type: none
+}
+
+.nombo_tm_intro_mainpart .main_list ul li {
+    margin: 0 0 50px 0;
+    width: 50%;
+    float: left;
+    padding-left: 50px
+}
+
+.nombo_tm_intro_mainpart .main_list ul li .list_inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    top: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_intro_mainpart .main_list ul li .list_inner:hover {
+    top: -5px
+}
+
+.nombo_tm_intro_mainpart .main_list ul li .detail {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 20px
+}
+
+.nombo_tm_intro_mainpart .main_list ul li .detail h3 {
+    font-size: 20px
+}
+
+.nombo_tm_intro_mainpart .main_list ul li .full_link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.nombo_tm_intro_bottom {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    background-color: #191919;
+    text-align: center;
+    padding: 100px 0
+}
+
+.nombo_tm_intro_bottom p {
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.nombo_tm_intro_bottom h3 {
+    color: #fff;
+    margin-bottom: 25px
+}
+
+.nombo_tm_intro_bottom a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    font-family: Montserrat;
+    border: 2px solid #fff;
+    padding: 8px 40px 6px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.nombo_tm_intro_bottom a:hover {
+    color: #fff;
+    background-color: transparent
+}
+
+body.dark {
+    background-color: #000;
+    color: #ddd
+}
+
+body.dark h3 {
+    color: #fff
+}
+
+body.dark .nombo_tm_leftpart {
+    background-color: #121212;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+}
+
+body.dark .nombo_tm_leftpart .menu ul li a {
+    color: #fff
+}
+
+body.dark .nombo_tm_leftpart .menu ul li a:hover {
+    color: #2d5fff
+}
+
+body.dark .nombo_tm_leftpart .copyright p {
+    color: #fff
+}
+
+body.dark .nombo_tm_leftpart .copyright p a {
+    color: #fff
+}
+
+body.dark .nombo_tm_leftpart .copyright p a:hover {
+    border-bottom-color: #fff
+}
+
+body.dark .nombo_tm_rightpart .hero .social ul li a:hover {
+    color: #fff
+}
+
+body.dark .nombo_tm_button a:hover {
+    color: #fff
+}
+
+body.dark .nombo_tm_service {
+    background-color: #121212
+}
+
+body.dark .nombo_tm_service .service_inner .right ul li .list_inner {
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .05)
+}
+
+body.dark .nombo_tm_service .service_inner .right ul li.active .list_inner {
+    background-color: #2d5fff
+}
+
+body.dark .nombo_tm_service .service_inner .right ul li .list_inner:hover {
+    background-color: #2d5fff
+}
+
+body.dark .nombo_tm_portfolio .portfolio_left .portfolio_list ul li .detail {
+    background-color: #2d5fff
+}
+
+body.dark .nombo_tm_skills {
+    background-color: #121212
+}
+
+body.dark .nombo_tm_skills .progress_inner>span {
+    color: #fff
+}
+
+body.dark .nombo_tm_skills .progress_inner .background {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+body.dark .nombo_tm_news .news_right .news_list .detail {
+    background-color: #2d5fff
+}
+
+body.dark .nombo_tm_news .news_right .news_list .detail .title a {
+    color: #fff
+}
+
+body.dark .nombo_tm_news .news_right .news_list .detail .date a {
+    color: #fff
+}
+
+body.dark .nombo_tm_contact .about_short_contact_wrap ul li label {
+    color: #fff
+}
+
+body.dark .nombo_tm_contact .right .input_wrap ul li input {
+    color: #fff
+}
+
+body.dark .nombo_tm_contact .right .input_wrap ul li textarea {
+    color: #fff
+}
+
+body.dark .nombo_tm_partners {
+    background-color: #121212
+}
+
+body.dark .nombo_tm_footer {
+    background-color: #121212
+}
+
+body.dark .nombo_tm_footer {
+    background-color: #121212
+}
+
+@media (max-width:1200px) {
+    .nombo_tm_leftpart {
+        display: none
+    }
+    .nombo_tm_rightpart {
+        padding-left: 0
+    }
+}
+
+@media (max-width:1040px) {
+    .nombo_tm_about .about_inner {
+        flex-direction: column;
+        align-items: baseline
+    }
+    .nombo_tm_about .about_inner .left {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 100px
+    }
+    .nombo_tm_about .right {
+        width: 100%;
+        padding-left: 0
+    }
+    .nombo_tm_service .service_inner {
+        flex-direction: column;
+        align-items: baseline
+    }
+    .nombo_tm_service .service_inner .service_left {
+        padding-right: 0;
+        width: 100%
+    }
+    .nombo_tm_service .service_inner .service_right {
+        padding-left: 0;
+        width: 100%
+    }
+    .nombo_tm_video .inner {
+        flex-direction: column;
+        align-items: baseline
+    }
+    .nombo_tm_video .inner .left {
+        margin-bottom: 20px
+    }
+    .nombo_tm_portfolio .inner {
+        flex-direction: column
+    }
+    .nombo_tm_portfolio .portfolio_left {
+        width: 100%;
+        padding-right: 0;
+        float: right
+    }
+    .nombo_tm_portfolio .portfolio_right {
+        width: 100%;
+        padding-left: 0;
+        float: left
+    }
+    .nombo_tm_skills .skills_inner {
+        flex-direction: column
+    }
+    .nombo_tm_skills .skills_inner .left {
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 100px
+    }
+    .nombo_tm_skills .skills_inner .right {
+        padding-left: 0;
+        width: 100%
+    }
+    .nombo_tm_news .inner {
+        flex-direction: column
+    }
+    .nombo_tm_news .news_left {
+        padding-right: 0;
+        width: 100%
+    }
+    .nombo_tm_news .news_right {
+        padding-left: 0;
+        width: 100%
+    }
+    .nombo_tm_contact .contact_inner {
+        flex-direction: column
+    }
+    .nombo_tm_contact .contact_left {
+        width: 100%;
+        padding-right: 0
+    }
+    .nombo_tm_contact .right {
+        padding-left: 0;
+        width: 100%
+    }
+    .mamer_univ_title {
+        padding-bottom: 100px
+    }
+    .nombo_tm_portfolio .mamer_univ_title {
+        padding-bottom: 0
+    }
+    body.rtl .nombo_tm_about .right {
+        padding-right: 0
+    }
+    body.rtl .nombo_tm_service .service_inner .service_right {
+        padding-right: 0
+    }
+    body.rtl .nombo_tm_portfolio .portfolio_right {
+        padding-right: 0
+    }
+    body.rtl .nombo_tm_skills .skills_inner .left {
+        padding-left: 0
+    }
+    body.rtl .nombo_tm_skills .skills_inner .right {
+        padding-right: 0
+    }
+    body.rtl .nombo_tm_news .news_right {
+        padding-right: 0
+    }
+    body.rtl .nombo_tm_contact .right {
+        padding-right: 0
+    }
+    body.rtl .nombo_tm_footer .inner .social ul li {
+        float: right
+    }
+}
+
+@media (max-width:768px) {
+    .nombo_tm_rightpart .hero .content .name {
+        font-size: 50px
+    }
+    .nombo_tm_service .service_inner .right ul li {
+        width: 100%;
+        padding-left: 0
+    }
+    .nombo_tm_service .service_inner .right ul {
+        margin: 0
+    }
+    .nombo_tm_portfolio .portfolio_left .portfolio_list ul li {
+        width: 100%;
+        padding-left: 0
+    }
+    .nombo_tm_portfolio .portfolio_left .portfolio_list ul {
+        margin: 0
+    }
+    .nombo_tm_news .news_right .news_list ul li {
+        width: 100%;
+        padding-left: 0
+    }
+    .nombo_tm_news .news_right .news_list ul {
+        margin: 0
+    }
+    .nombo_tm_intro_mainpart .main_list ul li {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 30px
+    }
+    .nombo_tm_intro_mainpart .main_list ul {
+        margin: 0
+    }
+}
